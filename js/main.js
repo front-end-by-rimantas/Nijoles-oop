@@ -1,5 +1,6 @@
 import { Cat } from './Cat.js';
 import { Dog } from './Dog.js';
+import { Button } from './Button.js'
 
 /*
 Sukurti kaciuka.
@@ -29,7 +30,11 @@ pukis.introduce();
 console.log('-----------');
 
 const rexas = new Dog('Rexas', 'grazios');
-
 console.log(rexas.speek());
-
 rexas.introduce();
+
+
+
+const btn1 = new Button('labas', '#btn1');
+const btn2 = new Button('rytas');
+const btn3 = new Button('Lietuva');
