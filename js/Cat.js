@@ -1,15 +1,11 @@
-class Cat {
+import { Animal } from './Animal.js';
+
+class Cat extends Animal {
     constructor(vardas, spalva) {
-        this.name = vardas;
-        this.color = spalva;
-    }
-
-    speek() {
-        return `${this.name} (kaciukas) pasake miau.`;
-    }
-
-    introduce() {
-        console.log(`As esu ${this.name}, ${this.color} spalvos katinas 🐱`);
+        super(vardas, spalva);
+        this.sound = 'miau miau';
+        this.breed = 'katinas';
+        this.avatar = '🐱';
     }
 }
 
